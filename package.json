@@ -12,9 +12,9 @@
     "husky": "^4.2.5",
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.11",
+    "polished": "^3.4.4",
     "prettier": "^2.0.5",
-    "rimraf": "^3.0.2",
-    "polished": "^3.4.4"
+    "rimraf": "^3.0.2"
   },
   "workspaces": [
     "packages/common",
@@ -56,5 +56,8 @@
     "*.{js,md,css}": [
       "prettier --trailing-comma es5 --single-quote --write"
     ]
+  },
+  "dependencies": {
+    "gatsby-plugin-web-font-loader": "^1.0.4"
   }
 }

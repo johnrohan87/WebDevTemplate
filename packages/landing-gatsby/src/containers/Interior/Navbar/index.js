@@ -109,12 +109,77 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container>
-        <Logo
+        {/* <Logo
           href="/interior"
           logoSrc={logo}
           title="Interior"
           logoStyle={logoStyle}
-        />
+        />*/}
+        <div>
+          <ul style={{ display: 'flex', alignItems: 'center' }}>
+            <lh>Web pages here --</lh>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="app">
+                App
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saas">
+                SAAS
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saasmodern">
+                SAAS-Modern
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saasclassic">
+                SAAS-Classic
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="hosting">
+                Hosting
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="ride">
+                Ride
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="crypto">
+                Crypto
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="charity">
+                Charity
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="interior">
+                Interior
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="appmodern">
+                Appmodern
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="appclassic">
+                Appclassic
+              </a>
+            </li>
+          </ul>
+        </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"

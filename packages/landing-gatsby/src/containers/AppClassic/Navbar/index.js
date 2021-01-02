@@ -44,7 +44,7 @@ const Navbar = () => {
     setState({ ...state, searchToggle: false })
   );
 
-  const toggleHandler = type => {
+  const toggleHandler = (type) => {
     if (type === 'search') {
       setState({
         ...state,
@@ -62,14 +62,14 @@ const Navbar = () => {
     }
   };
 
-  const handleOnChange = event => {
+  const handleOnChange = (event) => {
     setState({
       ...state,
       search: event.target.value,
     });
   };
 
-  const handleSearchForm = event => {
+  const handleSearchForm = (event) => {
     event.preventDefault();
 
     if (state.search !== '') {
@@ -87,17 +87,17 @@ const Navbar = () => {
   return (
     <NavbarWrapper className="navbar">
       <Container>
-        <Logo
+        {/*<Logo
           className="logo"
           href="/appclassic"
           logoSrc={logo.publicURL}
           title="App Classic"
         />
-        {/* end of logo */}
+         
 
         <MenuArea className={state.searchToggle ? 'active' : ''}>
           <ScrollSpyMenu className="menu" menuItems={navMenu} offset={-84} />
-          {/* end of main menu */}
+          
 
           <Search className="search" ref={searchRef}>
             <form onSubmit={handleSearchForm}>
@@ -115,7 +115,7 @@ const Navbar = () => {
               onClick={() => toggleHandler('search')}
             />
           </Search>
-          {/* end of search */}
+          
 
           <AnchorLink href="#trail" offset={84}>
             <Button className="trail" title="Try for Free" />
@@ -136,7 +136,72 @@ const Navbar = () => {
             variant="textButton"
             onClick={() => toggleHandler('menu')}
           />
-        </MenuArea>
+        </MenuArea> */}
+        <div>
+          <ul style={{ display: 'flex', alignItems: 'center' }}>
+            <lh>Web pages here --</lh>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="app">
+                App
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saas">
+                SAAS
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saasmodern">
+                SAAS-Modern
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="saasclassic">
+                SAAS-Classic
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="hosting">
+                Hosting
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="ride">
+                Ride
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="crypto">
+                Crypto
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="charity">
+                Charity
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="interior">
+                Interior
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="appmodern">
+                Appmodern
+              </a>
+            </li>
+            <li>
+              <a style={{ padding: '15px 10px' }} href="appclassic">
+                Appclassic
+              </a>
+            </li>
+          </ul>
+        </div>
       </Container>
 
       {/* start mobile menu */}
