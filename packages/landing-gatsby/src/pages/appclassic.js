@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dropdown } from 'react-bootstrap';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'common/src/theme/appclassic';
 import { ResetCSS } from 'common/src/assets/css/style';
@@ -23,7 +24,7 @@ import GlobalStyle, {
 
 import SEO from '../components/seo';
 
-export default function() {
+export default function () {
   return (
     <ThemeProvider theme={theme}>
       <>
@@ -34,6 +35,31 @@ export default function() {
         <AppWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-active">
             <Navbar />
+
+            <Dropdown style={{ top: '80px' }}>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Find more Templates Here!
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="/agency">Agency</Dropdown.Item>
+                <Dropdown.Item href="/agencydigital">
+                  DgencyDigital
+                </Dropdown.Item>
+                <Dropdown.Item href="/agencymodern">DgencyModern</Dropdown.Item>
+                <Dropdown.Item href="/app">App</Dropdown.Item>
+                <Dropdown.Item href="/saas">SAAS</Dropdown.Item>
+                <Dropdown.Item href="/saasmodern">SAAS-Modern</Dropdown.Item>
+                <Dropdown.Item href="/saasclassic">SAAS-Classic</Dropdown.Item>
+                <Dropdown.Item href="/hosting">Hosting</Dropdown.Item>
+                <Dropdown.Item href="/portfolio">Portfolio</Dropdown.Item>
+                <Dropdown.Item href="/ride">Ride</Dropdown.Item>
+                <Dropdown.Item href="/crypto">Crypto</Dropdown.Item>
+                <Dropdown.Item href="/charity">Charity</Dropdown.Item>
+                <Dropdown.Item href="/interior">Interior</Dropdown.Item>
+                <Dropdown.Item href="/appmodern">Appmodern</Dropdown.Item>
+                <Dropdown.Item href="/appclassic">Appclassic</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Sticky>
           <ContentWrapper>
             <Banner />
