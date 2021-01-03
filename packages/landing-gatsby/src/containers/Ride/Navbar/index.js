@@ -46,7 +46,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
   return (
     <NavbarWrapper {...navbarStyle}>
       <Container noGutter mobileGutter width="1200px">
-        {/*<Box {...row}>
+        <Box {...row}>
           <Logo
             href="#"
             logoSrc={LogoImage}
@@ -88,72 +88,7 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
               />
             </Drawer>
           </Box>
-        </Box>*/}
-        <div>
-          <ul style={{ display: 'flex', alignItems: 'center' }}>
-            <lh>Web pages here --</lh>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="app">
-                App
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="saas">
-                SAAS
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="saasmodern">
-                SAAS-Modern
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="saasclassic">
-                SAAS-Classic
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="hosting">
-                Hosting
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="portfolio">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="ride">
-                Ride
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="crypto">
-                Crypto
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="charity">
-                Charity
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="interior">
-                Interior
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="appmodern">
-                Appmodern
-              </a>
-            </li>
-            <li>
-              <a style={{ padding: '15px 10px' }} href="appclassic">
-                Appclassic
-              </a>
-            </li>
-          </ul>
-        </div>
+        </Box>
       </Container>
     </NavbarWrapper>
   );
