@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Dropdown } from 'react-bootstrap';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { Modal } from '@redq/reuse-modal';
@@ -22,6 +21,7 @@ import Footer from '../containers/Agency/Footer';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import { Dropdown } from 'react-bootstrap';
 
 export default () => {
   return (
@@ -44,10 +44,10 @@ export default () => {
                 <Dropdown.Menu>
                   <Dropdown.Item href="/agency">Agency</Dropdown.Item>
                   <Dropdown.Item href="/agencydigital">
-                    DgencyDigital
+                    AgencyDigital
                   </Dropdown.Item>
                   <Dropdown.Item href="/agencymodern">
-                    DgencyModern
+                    AgencyModern
                   </Dropdown.Item>
                   <Dropdown.Item href="/app">App</Dropdown.Item>
                   <Dropdown.Item href="/saas">SAAS</Dropdown.Item>

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Dropdown } from 'react-bootstrap';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import { rideTheme } from 'common/src/theme/ride';
@@ -17,6 +16,7 @@ import TestimonialSection from '../containers/Ride/TestimonialSection';
 import FeatureSlider from '../containers/Ride/FeatureSlider';
 import Footer from '../containers/Ride/Footer';
 import SEO from '../components/seo';
+import { Dropdown } from 'react-bootstrap';
 
 export default () => {
   return (
@@ -37,10 +37,10 @@ export default () => {
                 <Dropdown.Menu>
                   <Dropdown.Item href="/agency">Agency</Dropdown.Item>
                   <Dropdown.Item href="/agencydigital">
-                    DgencyDigital
+                    AgencyDigital
                   </Dropdown.Item>
                   <Dropdown.Item href="/agencymodern">
-                    DgencyModern
+                    AgencyModern
                   </Dropdown.Item>
                   <Dropdown.Item href="/app">App</Dropdown.Item>
                   <Dropdown.Item href="/saas">SAAS</Dropdown.Item>

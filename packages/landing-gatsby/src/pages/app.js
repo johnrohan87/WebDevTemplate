@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Fragment } from 'react';
-import { Dropdown } from 'react-bootstrap';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
@@ -23,6 +22,7 @@ import FeatureSliderTwo from '../containers/App/FeatureSliderTwo';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import '@redq/reuse-modal/es/index.css';
 import SEO from '../components/seo';
+import { Dropdown } from 'react-bootstrap';
 
 function getSize() {
   return {
@@ -73,10 +73,10 @@ export default () => {
                 <Dropdown.Menu>
                   <Dropdown.Item href="/agency">Agency</Dropdown.Item>
                   <Dropdown.Item href="/agencydigital">
-                    DgencyDigital
+                    AgencyDigital
                   </Dropdown.Item>
                   <Dropdown.Item href="/agencymodern">
-                    DgencyModern
+                    AgencyModern
                   </Dropdown.Item>
                   <Dropdown.Item href="/app">App</Dropdown.Item>
                   <Dropdown.Item href="/saas">SAAS</Dropdown.Item>

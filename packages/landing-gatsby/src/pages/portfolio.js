@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Dropdown } from 'react-bootstrap';
 import { ThemeProvider } from 'styled-components';
 import Sticky from 'react-stickynode';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
@@ -22,6 +21,7 @@ import ClientsSection from '../containers/Portfolio/Clients';
 import ContactSection from '../containers/Portfolio/Contact';
 import Footer from '../containers/Portfolio/Footer';
 import SEO from '../components/seo';
+import { Dropdown } from 'react-bootstrap';
 
 export default () => {
   return (
@@ -43,10 +43,10 @@ export default () => {
                 <Dropdown.Menu>
                   <Dropdown.Item href="/agency">Agency</Dropdown.Item>
                   <Dropdown.Item href="/agencydigital">
-                    DgencyDigital
+                    AgencyDigital
                   </Dropdown.Item>
                   <Dropdown.Item href="/agencymodern">
-                    DgencyModern
+                    AgencyModern
                   </Dropdown.Item>
                   <Dropdown.Item href="/app">App</Dropdown.Item>
                   <Dropdown.Item href="/saas">SAAS</Dropdown.Item>

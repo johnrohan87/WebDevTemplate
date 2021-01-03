@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dropdown } from 'react-bootstrap';
+
 import { ThemeProvider } from 'styled-components';
 import { Modal } from '@redq/reuse-modal';
 import { theme } from 'common/src/theme/appModern';
@@ -25,6 +25,8 @@ import '@redq/reuse-modal/es/index.css';
 
 import SEO from '../components/seo';
 
+import { Dropdown } from 'react-bootstrap';
+
 export default function () {
   return (
     <ThemeProvider theme={theme}>
@@ -45,9 +47,9 @@ export default function () {
               <Dropdown.Menu>
                 <Dropdown.Item href="/agency">Agency</Dropdown.Item>
                 <Dropdown.Item href="/agencydigital">
-                  DgencyDigital
+                  AgencyDigital
                 </Dropdown.Item>
-                <Dropdown.Item href="/agencymodern">DgencyModern</Dropdown.Item>
+                <Dropdown.Item href="/agencymodern">AgencyModern</Dropdown.Item>
                 <Dropdown.Item href="/app">App</Dropdown.Item>
                 <Dropdown.Item href="/saas">SAAS</Dropdown.Item>
                 <Dropdown.Item href="/saasmodern">SAAS-Modern</Dropdown.Item>
